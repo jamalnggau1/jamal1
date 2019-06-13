@@ -4,6 +4,94 @@ from multiprocessing.pool import ThreadPool
 
 from requests.exceptions import ConnectionError
 from mechanize import Browser
+import random
+import time
+import platform, os, smtplib
+from email import encoders
+import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
+from multiprocessing.pool import ThreadPool
+import mechanize
+ 
+from requests.exceptions import ConnectionError
+from mechanize import Browser
+
+from getpass import getpass
+import os
+import time
+h='whait'
+a='1'
+b='2'
+c='3'
+d='jamal nggau'
+def mengetik(a):
+    for c in a + '\n':
+        sys.stdout.write(c)        
+        sys.stdout.flush()
+        time.sleep(0.1)   
+
+def tai():
+      while True:
+           print("")
+           os.system("clear")
+           print('            \x1b[1;92m\n\xe2\x95\x94\xe2\x95\xa6\xe2\x95\x97\xe2\x94\x8c\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x80\xe2\x94\x90\xe2\x94\xac\xe2\x94\x8c\xe2\x94\x80   \xe2\x95\x94\xe2\x95\x90\xe2\x95\x97\xe2\x95\x94\xe2\x95\x97 \n \xe2\x95\x91\xe2\x95\x91\xe2\x94\x9c\xe2\x94\x80\xe2\x94\xa4\xe2\x94\x9c\xe2\x94\xac\xe2\x94\x98\xe2\x94\x9c\xe2\x94\xb4\xe2\x94\x90\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x95\xa0\xe2\x95\xa3 \xe2\x95\xa0\xe2\x95\xa9\xe2\x95\x97\n\xe2\x95\x90\xe2\x95\xa9\xe2\x95\x9d\xe2\x94\xb4 \xe2\x94\xb4\xe2\x94\xb4\xe2\x94\x94\xe2\x94\x80\xe2\x94\xb4 \xe2\x94\xb4   \xe2\x95\x9a  \xe2\x95\x9a\xe2\x95\x90\xe2\x95\x9d \x1b[1;91mv1.7\n\x1b[3;93m* \x1b[1;94mAuthor  \x1b[1;91m: \x1b[1;96mQ`jack')
+           print('')
+           os.system('date | lolcat')
+           print("\033[1;93m")
+           print("               \x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mBismillahirrahmanirrahim \x1b[1;91m[\xe2\x9c\xba] \x1b[1;92m")
+           print("")
+           print("                    \x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mAssalamualaikum \x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92m")
+           print("")
+           try:
+                x = str(input('\033[1;95mUsername \033[1;93m: '))
+                print("")
+                e = getpass('\033[1;93mPassword \033[1;95m: ')
+                print ("")
+                if x=="123" and e=="123":
+                   print('')
+                   os.system('figlet ' +h+ ' | lolcat')
+                   time.sleep(2)
+                   os.system('clear')                                      
+                   print('')
+                   os.system('figlet ' + a + ' | lolcat')
+                   time.sleep(1)
+                   os.system('clear')
+                   print('')
+                   os.system('figlet ' + b + ' | lolcat')
+                   time.sleep(1)
+                   os.system('clear')
+                   print('')
+                   os.system('figlet ' + c + ' | lolcat')
+                   time.sleep(1)
+                   os.system('clear')
+                   print('')
+                   os.system('figlet ' + d + ' | lolcat')
+                   time.sleep(4)
+                   os.system('clear')
+                   os.system('figlet ' + x + ' | lolcat')
+                   print('\033[1;92m ?????????????????????????????????????? ')
+                   print("")
+                   break            
+                else:
+                      print("")
+                      print("")
+                      print("")
+                      print("")
+                      print("\033[1;91mPassword Salah")
+                      time.sleep(1)                    
+                      print("")
+           except Exception:                                            
+                      print("")
+                      print("")
+                      mengetik('Jika Belum Punya Username Dan Password Silahkan Hubungi Author')                                                          
+                      print('\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92msilahkan tunggu sedang mengubungi author\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92m')                  
+                      print("")
+                      time.sleep(5)
+                      os.system('xdg-open https://api.whatsapp.com/send?phone=6282291323770&text=Halo%20Admin%20Saya%20Mau%20Tanya%20Username%20Dan%20Password')
+                      
+                      
+                      
+tai()
+os.system('clear')
 reload(sys)
 sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
